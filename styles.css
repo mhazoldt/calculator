@@ -1,0 +1,174 @@
+ul {
+  width: 500px;
+  margin: 20px auto 0px auto;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 0px solid black;
+  font-family: Andale Mono, monospace;
+  font-size: 35px;
+
+}
+
+li {
+  box-sizing: border-box;
+  width: calc(100%/4);
+  height: 125px;
+  border: 1px solid rgb(135, 197, 122);
+  padding: 0px;
+
+}
+
+#gridList > li > div {
+  height: 100%;
+  background-color: rgb(97, 179, 79);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#gridList > li > div#displayBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding-right: 25px;
+  overflow: hidden;
+
+}
+
+#gridList > li > div.numberButton {
+    position: relative;
+    background-color: rgb(97, 179, 79);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+#gridList > li > div.numberButton:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -75px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+
+}
+#gridList > li > div.numberButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+#gridList > li > div.textChange {
+  background-color: rgb(130, 194, 118);
+  color: black;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+
+  position: relative;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+
+}
+#gridList > li > div.textChange:hover {
+  color: white;
+
+}
+#gridList > li > div.textChange:after {
+  color: white;
+
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -75px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+
+}
+#gridList > li > div.textChange:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+
+}
+
+#gridList > li > div.backgroundChange {
+  background-color: rgb(97, 179, 79);
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+
+  position: relative;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+
+}
+#gridList > li > div.backgroundChange:hover {
+  background-color: rgb(130, 194, 118);
+
+}
+#gridList > li > div.backgroundChange:after {
+  color: white;
+
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -75px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+
+}
+#gridList > li > div.backgroundChange:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+
+}
+
+body #gridList > li > div#displayBox.redbackground {
+  background-color: rgb(178, 79, 79);
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+
+}
+body #gridList > li > div#displayBox.originalbackground {
+  background-color: rgb(97, 179, 79);
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+
+}
